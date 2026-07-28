@@ -603,58 +603,79 @@ text-align:center;
 ========================= */
 
 
-header{
+.contact{
 
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:999;
+
+    position:relative;
+
+    padding:100px 10%;
+
+
+    text-align:center;
+
 
     background:
-    rgba(5,8,22,0.65);
 
-    backdrop-filter:blur(20px);
+    linear-gradient(
+        180deg,
+        #050816,
+        #02030a
+    );
 
-    border-bottom:
-    1px solid rgba(0,245,255,0.15);
+
+    overflow:hidden;
+
 
 }
 
 
 
-nav{
+.contact::before{
 
-    height:90px;
 
-    display:flex;
+    content:"";
 
-    align-items:center;
+    position:absolute;
 
-    justify-content:space-between;
+    width:400px;
 
-    padding:0 10%;
+    height:400px;
+
+    top:-200px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+
+    background:#00f5ff;
+
+
+    filter:blur(150px);
+
+    opacity:.25;
+
 
 }
 
 
 
-/* LOGO */
 
-.logo{
+.contact h2{
 
-    font-size:28px;
 
-    font-weight:700;
+    position:relative;
 
-    letter-spacing:2px;
+
+    font-size:42px;
 
 
     background:
+
     linear-gradient(
         90deg,
         #00f5ff,
-        #8a2be2
+        #9d00ff
     );
 
 
@@ -663,107 +684,125 @@ nav{
     color:transparent;
 
 
+}
+
+
+
+.contact p{
+
+
     position:relative;
 
-}
+    margin:25px;
 
+    color:#aaa;
 
-.logo::after{
-
-    content:"";
-
-    position:absolute;
-
-    bottom:-8px;
-
-    left:0;
-
-    width:50%;
-
-    height:3px;
-
-
-    background:#00f5ff;
-
-
-    box-shadow:
-    0 0 15px #00f5ff;
+    font-size:18px;
 
 
 }
 
 
 
-/* NAV LINKS */
+/* SOCIAL BUTTONS */
 
 
-.nav-links{
+.icons{
+
 
     display:flex;
 
-    gap:40px;
+    justify-content:center;
 
-}
+    gap:25px;
 
-
-
-.nav-links a{
-
-
-    position:relative;
-
-    font-size:16px;
-
-    color:#ddd;
-
-    transition:.3s;
+    margin-top:35px;
 
 
 }
 
 
 
-.nav-links a::before{
+.icons a{
 
 
-    content:"";
+    width:130px;
 
-    position:absolute;
-
-    bottom:-8px;
-
-    left:0;
-
-    width:0;
-
-    height:2px;
-
-    background:#00f5ff;
-
-    transition:.3s;
+    padding:15px;
 
 
-}
+    border-radius:30px;
 
 
+    border:
 
-.nav-links a:hover{
+    1px solid rgba(0,245,255,.4);
+
 
 
     color:#00f5ff;
 
+
+    background:
+
+    rgba(255,255,255,.05);
+
+
+
+    transition:.4s;
+
+
 }
 
 
 
-.nav-links a:hover::before{
+
+.icons a:hover{
+
+
+    background:#00f5ff;
+
+    color:#000;
+
+
+    box-shadow:
+
+    0 0 25px #00f5ff;
+
+
+    transform:
+
+    translateY(-8px);
+
+
+}
+
+
+
+/* FOOTER LINE */
+
+
+.contact::after{
+
+
+    content:"© 2026 Amal Kacem | AR/VR Developer";
+
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:0;
 
     width:100%;
 
+
+    color:#555;
+
+    font-size:14px;
+
+
 }
-
-
-
 
 /* HOVER GLOW */
 
