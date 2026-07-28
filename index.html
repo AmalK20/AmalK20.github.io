@@ -1,150 +1,554 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amal Kacem | Unity VR Developer</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Amal Kacem | AR/VR Developer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
+
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1>AMAL KACEM</h1>
-    <h2>Unity VR Developer</h2>
-    <p>Creating immersive experiences</p>
-    <div class="buttons">
-      <a href="#projects" class="btn neon">Explorer mes projets</a>
-      <a href="/CV UNITY DEV ENG.pdf" target="_blank">Télécharger CV</a>
-    </div>
-  </div>
-</section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2 class="section-title">MES PROJETS</h2>
+<!-- NAVBAR -->
 
-  <div class="projects-grid">
+<header>
 
-    <div class="project-card">
-      <div class="card-image">
-        <img src="Assets/images/FlightEase.png" alt="Simulation VR Aérophobie">
-      </div>
-      <div class="card-content">
-        <h3>Simulation VR – Aérophobie</h3>
-        <p class="project-desc">Application thérapeutique VR</p>
-        <div class="tags">
-          <span>Unity</span>
-          <span>VR</span>
-          <span>C#</span>
-          <span>Meta Quest 2</span>
-        </div>
-        <a href="#" class="project-btn" onclick="openProject('aerophobia')">
-          Voir le projet
-        </a>
-      </div>
-    </div>
+<nav>
 
-    <div class="project-card">
-      <div class="card-image">
-        <img src="Assets/images/KinéVR.png" alt="VR Medical Training">
-      </div>
-      <div class="card-content">
-        <h3>VR Medical Training</h3>
-        <p class="project-desc">Entraînement médicale immersive</p>
-        <div class="tags">
-          <span>Unity</span>
-          <span>XR</span>
-          <span>C#</span>
-          <span>VR</span>
-          <span>Quest 2</span>
-          <span>VFX</span>
-        </div>
-        <a href="#" class="project-btn">
-          Voir le projet
-        </a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="card-image">
-        <img src="Assets/images/Computing History.png" alt="Virtual Escape Room">
-      </div>
-      <div class="card-content">
-        <h3>Computing History in VR</h3>
-        <p class="project-desc">Jeu VR éducatif</p>
-        <div class="tags">
-          <span>Unity</span>
-          <span>VR</span>
-          <span>C#</span>
-          <span>Quest 2 & Quest 3</span>
-        </div>
-        <a href="#" class="project-btn">
-          Voir le projet
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- VIDEOS -->
-<section class="section">
-  <h2 class="section-title">VIDÉOS</h2>
-  <div class="video-grid">
-    <div class="video-card">▶ FlightEase</div>
-    <div class="video-card">▶ Kiné VR</div>
-    <div class="video-card">▶ Computing History VR</div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section class="section">
-  <h2 class="section-title">MES COMPÉTENCES</h2>
-  <div class="skills">
-    <span>Unity</span>
-    <span>C#</span>
-    <span>VR / XR / AR</span>
-    <span>Quest</span>
-    <span>Blender</span>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section about">
-  <img src="assets/images/profile.jpg">
-  <div>
-    <h2>À PROPOS</h2>
-    <p>
-      Développeur VR spécialisé dans la création d’expériences immersives
-      thérapeutiques et interactives.
-    </p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<footer class="contact">
-  <p>Disponible pour nouvelles opportunités</p>
-  <div class="icons">
-    <a href="mailto:kacemamel8@gmail.com">Email</a>
-    <a href="https://www.linkedin.com/in/amal-kacem/">in</a>
-    <a href="https://github.com/AmalK20" target="_blank">GitHub</a>
-  </div>
-</footer>
-
-  <div id="project-modal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeProject()">✖</span>
-    <h2 id="modal-title"></h2>
-    <video id="modal-video" controls></video>
-    <p id="modal-desc"></p>
-  </div>
+<div class="logo">
+AMAL KACEM
 </div>
 
+
+<div class="nav-links">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+
+<div class="overlay"></div>
+
+
+<div class="hero-content">
+
+
+<h1>
+AMAL KACEM
+</h1>
+
+
+<h2>
+AR / VR Developer
+</h2>
+
+
+<p>
+Creating immersive experiences using Unity,
+C# and XR technologies
+</p>
+
+
+
+<div class="badges">
+
+<span>🎮 Unity</span>
+<span>🥽 Meta Quest</span>
+<span>🌐 XR Toolkit</span>
+<span>🧊 Blender</span>
+
+</div>
+
+
+
+<div class="buttons">
+
+<a href="#projects" class="btn neon">
+View Projects
+</a>
+
+
+<a href="CV UNITY DEV ENG.pdf"
+target="_blank"
+class="btn outline">
+
+Download CV
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section id="about" class="section about">
+
+
+<div>
+
+<h2 class="section-title">
+ABOUT ME
+</h2>
+
+
+<p>
+
+I am a Software Engineer specialized in
+Virtual Reality and Game Development.
+
+I create immersive applications using
+Unity, C#, Meta Quest and XR technologies.
+
+My goal is to design interactive experiences
+that combine technology, creativity and real-world solutions.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- EXPERIENCE -->
+
+
+<section class="section">
+
+
+<h2 class="section-title">
+EXPERIENCE
+</h2>
+
+
+
+<div class="experience-card">
+
+
+<h3>
+VR Developer Projects
+</h3>
+
+
+<p>
+2024 - 2026
+</p>
+
+
+<ul>
+
+<li>
+Developed immersive VR applications with Unity
+</li>
+
+
+<li>
+Implemented interactions using XR Interaction Toolkit
+</li>
+
+
+<li>
+Created gameplay mechanics with C#
+</li>
+
+
+<li>
+Worked with 3D assets and optimization
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section">
+
+
+<h2 class="section-title">
+MY PROJECTS
+</h2>
+
+
+
+<div class="projects-grid">
+
+
+
+
+
+<div class="project-card">
+
+
+<div class="card-image">
+
+<img src="Assets/images/FlightEase.png">
+
+</div>
+
+
+
+<div class="card-content">
+
+
+<h3>
+FlightEase VR
+</h3>
+
+
+<p>
+
+VR exposure therapy application
+helping users overcome fear of flying.
+
+</p>
+
+
+<p>
+
+<strong>Role:</strong>
+Unity VR Developer
+
+</p>
+
+
+<div class="tags">
+
+<span>Unity</span>
+<span>C#</span>
+<span>XR Toolkit</span>
+<span>Quest 2</span>
+
+</div>
+
+
+<a class="project-btn"
+onclick="openProject('aerophobia')">
+
+View Project
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="project-card">
+
+
+<div class="card-image">
+
+<img src="Assets/images/KinéVR.png">
+
+</div>
+
+
+
+<div class="card-content">
+
+
+<h3>
+KineVR
+</h3>
+
+
+<p>
+
+Virtual Reality rehabilitation platform
+using gamification for physiotherapy exercises.
+
+</p>
+
+
+<p>
+
+<strong>Role:</strong>
+VR Developer
+
+</p>
+
+
+<div class="tags">
+
+<span>Unity</span>
+<span>C#</span>
+<span>VR</span>
+<span>Blender</span>
+
+</div>
+
+
+<a class="project-btn">
+
+View Project
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="project-card">
+
+
+<div class="card-image">
+
+<img src="Assets/images/Computing History.png">
+
+</div>
+
+
+
+<div class="card-content">
+
+
+<h3>
+Timeline Theater VR
+</h3>
+
+
+<p>
+
+Interactive VR experience exploring
+the history of computing.
+
+</p>
+
+
+
+<div class="tags">
+
+<span>Unity</span>
+<span>VR</span>
+<span>Quest</span>
+
+</div>
+
+
+<a class="project-btn">
+
+View Project
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- SKILLS -->
+
+
+<section id="skills" class="section">
+
+
+<h2 class="section-title">
+TECH STACK
+</h2>
+
+
+<div class="skills">
+
+
+<span>🎮 Unity</span>
+<span>💻 C#</span>
+<span>🥽 Meta Quest</span>
+<span>🌐 XR Toolkit</span>
+<span>🧊 Blender</span>
+<span>Git</span>
+<span>Firebase</span>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<footer id="contact"
+class="contact">
+
+
+<h2>
+Let's build immersive experiences
+</h2>
+
+
+
+<p>
+Open to AR/VR Developer opportunities
+</p>
+
+
+
+<div class="icons">
+
+
+<a href="mailto:kacemamel8@gmail.com">
+Email
+</a>
+
+
+<a href="https://www.linkedin.com/in/amal-kacem/"
+target="_blank">
+
+LinkedIn
+
+</a>
+
+
+<a href="https://github.com/AmalK20"
+target="_blank">
+
+GitHub
+
+</a>
+
+
+</div>
+
+
+
+</footer>
+
+
+
+
+
+<div id="project-modal"
+class="modal">
+
+
+<div class="modal-content">
+
+
+<span class="close"
+onclick="closeProject()">
+
+✖
+
+</span>
+
+
+<h2 id="modal-title"></h2>
+
+
+<video id="modal-video"
+controls></video>
+
+
+<p id="modal-desc"></p>
+
+
+</div>
+
+
+</div>
+
+
+
 <script src="script.js"></script>
+
+
 </body>
 </html>
