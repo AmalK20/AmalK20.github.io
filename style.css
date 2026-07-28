@@ -38,60 +38,172 @@ header{
 
     position:fixed;
     top:0;
+    left:0;
     width:100%;
-    z-index:1000;
-    background:rgba(5,8,22,0.75);
-    backdrop-filter:blur(15px);
+    z-index:999;
+
+    background:
+    rgba(5,8,22,0.65);
+
+    backdrop-filter:blur(20px);
+
+    border-bottom:
+    1px solid rgba(0,245,255,0.15);
+
 }
+
 
 
 nav{
 
+    height:90px;
+
     display:flex;
-    justify-content:space-between;
+
     align-items:center;
-    padding:25px 10%;
+
+    justify-content:space-between;
+
+    padding:0 10%;
 
 }
 
+
+
+/* LOGO */
 
 .logo{
 
-    font-size:25px;
+    font-size:28px;
+
     font-weight:700;
 
-    background:linear-gradient(
+    letter-spacing:2px;
+
+
+    background:
+    linear-gradient(
         90deg,
         #00f5ff,
-        #9d00ff
+        #8a2be2
     );
 
+
     -webkit-background-clip:text;
+
     color:transparent;
+
+
+    position:relative;
 
 }
 
+
+.logo::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:50%;
+
+    height:3px;
+
+
+    background:#00f5ff;
+
+
+    box-shadow:
+    0 0 15px #00f5ff;
+
+
+}
+
+
+
+/* NAV LINKS */
 
 
 .nav-links{
 
     display:flex;
-    gap:30px;
+
+    gap:40px;
 
 }
+
 
 
 .nav-links a{
 
-    font-weight:500;
+
+    position:relative;
+
+    font-size:16px;
+
+    color:#ddd;
+
     transition:.3s;
+
 
 }
 
 
+
+.nav-links a::before{
+
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:0;
+
+    height:2px;
+
+    background:#00f5ff;
+
+    transition:.3s;
+
+
+}
+
+
+
 .nav-links a:hover{
 
+
     color:#00f5ff;
+
+}
+
+
+
+.nav-links a:hover::before{
+
+    width:100%;
+
+}
+
+
+
+
+/* HOVER GLOW */
+
+
+.nav-links a:hover{
+
+    text-shadow:
+
+    0 0 10px #00f5ff;
 
 }
 
@@ -491,136 +603,178 @@ text-align:center;
 ========================= */
 
 
-.contact{
+header{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+
+    background:
+    rgba(5,8,22,0.65);
+
+    backdrop-filter:blur(20px);
+
+    border-bottom:
+    1px solid rgba(0,245,255,0.15);
+
+}
 
 
-text-align:center;
+
+nav{
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 10%;
+
+}
 
 
-background:#03050d;
+
+/* LOGO */
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
 
 
-padding:80px 10%;
+    background:
+    linear-gradient(
+        90deg,
+        #00f5ff,
+        #8a2be2
+    );
+
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+
+    position:relative;
+
+}
+
+
+.logo::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:50%;
+
+    height:3px;
+
+
+    background:#00f5ff;
+
+
+    box-shadow:
+    0 0 15px #00f5ff;
 
 
 }
 
 
 
-.contact h2{
-
-
-font-size:35px;
-
-}
-
-
-
-.contact p{
-
-color:#aaa;
-
-margin:20px;
-
-
-}
-
-
-.icons a{
-
-
-margin:15px;
-
-color:#00f5ff;
-
-
-}
-
-
-
-/* =========================
- MODAL
-========================= */
-
-
-.modal{
-
-
-display:none;
-
-position:fixed;
-
-inset:0;
-
-background:
-rgba(0,0,0,.8);
-
-
-align-items:center;
-
-justify-content:center;
-
-
-}
-
-
-
-.modal-content{
-
-
-background:#101525;
-
-padding:40px;
-
-border-radius:20px;
-
-width:80%;
-
-
-}
-
-
-
-.close{
-
-float:right;
-
-cursor:pointer;
-
-font-size:25px;
-
-}
-
-
-
-/* =========================
- RESPONSIVE
-========================= */
-
-
-@media(max-width:768px){
-
-
-.hero h1{
-
-font-size:45px;
-
-}
+/* NAV LINKS */
 
 
 .nav-links{
 
-display:none;
+    display:flex;
+
+    gap:40px;
 
 }
 
 
-section{
 
-padding:80px 5%;
+.nav-links a{
+
+
+    position:relative;
+
+    font-size:16px;
+
+    color:#ddd;
+
+    transition:.3s;
+
 
 }
 
+
+
+.nav-links a::before{
+
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-8px;
+
+    left:0;
+
+    width:0;
+
+    height:2px;
+
+    background:#00f5ff;
+
+    transition:.3s;
+
+
+}
+
+
+
+.nav-links a:hover{
+
+
+    color:#00f5ff;
+
+}
+
+
+
+.nav-links a:hover::before{
+
+    width:100%;
+
+}
+
+
+
+
+/* HOVER GLOW */
+
+
+.nav-links a:hover{
+
+    text-shadow:
+
+    0 0 10px #00f5ff;
+
+}
 
 
 }
