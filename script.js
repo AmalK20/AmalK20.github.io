@@ -1,11 +1,23 @@
 // Animation simple au scroll
 const elements = document.querySelectorAll(".section");
 const projects = {
-  aerophobia: {
-    title: "Simulation VR – Aérophobie",
-    video: "assets/videos/aerophobia.mp4",
-    desc: "Simulation immersive permettant une exposition progressive à la peur de l’avion."
-  }
+  aerophobia:{
+              title:"FlightEase VR",
+              video:"assets/videos/aerophobia.mp4",
+              desc:"VR exposure therapy simulation..."
+              },
+
+  kinevr:{
+          title:"KineVR",
+          video:"assets/videos/kinevr.mp4",
+          desc:"VR rehabilitation platform..."
+          },
+
+  timeline:{
+            title:"Timeline Theater VR",
+            video:"assets/videos/timeline.mp4",
+            desc:"Interactive computing history experience..."
+            }
 };
 
 window.addEventListener("scroll", () => {
