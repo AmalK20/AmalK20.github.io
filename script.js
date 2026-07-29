@@ -60,5 +60,6 @@ function shareVideo() {
   // file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
   
   Logger.findings = 'Shared successfully: ' + file.getName();
+  console.log(file);
 }
 
