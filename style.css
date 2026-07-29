@@ -815,5 +815,111 @@ text-align:center;
 
 }
 
+/* =========================
+ PROJECT DETAILS PAGE
+========================= */
+
+
+.project-hero{
+
+    min-height:80vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding-top:120px;
+
+}
+
+
+
+.project-hero h1{
+
+
+font-size:60px;
+
+
+background:
+
+linear-gradient(
+90deg,
+#00f5ff,
+#9d00ff
+);
+
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+
+}
+
+
+
+.project-hero img{
+
+
+width:70%;
+
+max-width:900px;
+
+margin-top:40px;
+
+border-radius:25px;
+
+
+box-shadow:
+
+0 0 40px rgba(0,245,255,.3);
+
+
+}
+
+
+
+
+.project-video{
+
+
+width:80%;
+
+border-radius:20px;
+
+display:block;
+
+margin:auto;
+
+
+}
+
+
+
+.section ul{
+
+max-width:800px;
+
+margin:auto;
+
+
+}
+
+
+.section li{
+
+
+margin:15px;
+
+color:#ccc;
+
+
+}
 
 }
