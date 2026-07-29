@@ -924,14 +924,18 @@ color:#ccc;
 
 
 .project-video{
+    width:100%;
     max-width:1000px;
     margin:50px auto;
 }
 
 .project-video iframe{
     width:100%;
-    aspect-ratio:9/16;   /* Vertical Shorts */
+    height:600px;
     border:none;
     border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,245,255,.25);
 }
+
+
 }
