@@ -922,4 +922,16 @@ color:#ccc;
 
 }
 
+
+.project-video{
+    max-width:1000px;
+    margin:50px auto;
+}
+
+.project-video iframe{
+    width:100%;
+    aspect-ratio:9/16;   /* Vertical Shorts */
+    border:none;
+    border-radius:20px;
+}
 }
