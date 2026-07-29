@@ -46,3 +46,19 @@ function openProject(id) {
 function closeProject() {
   document.getElementById("project-modal").style.display = "none";
 }
+
+function shareVideo() {
+  var fileId = 'https://drive.google.com/file/d/1DPPChO3lIGOXlcfUwn5H2UD1pib-kAdk/view?usp=sharing'; 
+  var emailAddress = 'kacemamel8@gmail.com'; 
+  
+  var file = DriveApp.getFileById(fileId);
+  
+  
+  file.addViewer(emailAddress);
+  
+  
+  // file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+  
+  Logger.findings = 'Shared successfully: ' + file.getName();
+}
+
